@@ -1,0 +1,141 @@
+body {
+    font-family: 'Bitter', serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+body {
+    margin: 0;
+    color: #fff;
+    background-color: #111;
+}
+
+a {
+    color: inherit;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:hover, a:focus {
+    text-decoration: underline;
+}
+
+svg {
+    display: block;
+    width: 48px;
+    height: 48px;
+    fill: #fff;
+}
+
+.container {
+    max-width: 60em;
+    margin: 0 auto;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:rgba(17, 17, 17, 0);
+    z-index: 1;
+}
+
+.nav > .container {
+    display: flex;
+}
+
+.nav-links {
+    margin-left: auto;
+}
+
+.nav-link {
+    display: inline-block;
+    line-height: 56px;
+    padding: 0 16px;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.header-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url(https://source.unsplash.com/featured?nature);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(90%) brightness(40%);
+}
+
+.header-title {
+    font-size: 8vw;
+    font-weight: normal;
+}
+
+.header-title-special {
+    font-weight: bold;
+    background-color: #fff;
+    color: #111;
+    margin-left: 4px;
+    padding: 0 12px;
+}
+
+.header-more-link {
+    padding: 16px;
+}
+
+.header-more-link > svg {
+    margin: 0 auto;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    color: #111;
+}
+
+.section-image {
+    padding-top: 75%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section-content {
+    padding: 6vw;
+}
+
+.footer {
+    padding: 16px;
+}
+
+@media (min-width: 1024px) {
+    .header-title {
+        font-size: 5vw;
+    }
+    .section {
+        flex-direction: row;
+    }
+    .section-image {
+        width: 60%;
+        padding-top: 0;
+    }
+    .section-content {
+        width: 40%;
+    }
+    .footer {
+        padding: 32px;
+        text-align: center;
+    }
+}

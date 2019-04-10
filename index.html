@@ -3,26 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rowans</title>
-    <link rel="stylesheet" href="/rowans.css">
+    <link href="https://fonts.googleapis.com/css?family=Bitter:400,700" rel="stylesheet"> 
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <div class="header">
+    <div id="nav" class="nav">
         <div class="container">
-            <h1>Rowans</h1>
+            <a class="nav-link" href="/">Rowans</a>
+            <div class="nav-links">
+                <a id="about-link" class="nav-link" href="#about">Over ons</a>
+                <a class="nav-link" href="https://blog.rowans.ml/" target="_blank">Blog</a>
+                <a class="nav-link" href="https://shop.rowans.ml/" target="_blank">Shop</a>
+            </div>
         </div>
     </div>
-    <div class="main">
-        <div class="container">
-            <h2>Gun ons geld...</h2>
-            <p><a href="https://www.gofundme.com/die-kantanky039s-zomerkamp-2019" target="_blank">gofundme</a></p>
+    <div class="header">
+        <div class="header-background"></div>
+        <h1 class="header-title">Wij zijn de <span class="header-title-special">rowans</span></h1>
+        <a style="position:absolute;bottom:0" id="about-link2" href="#about" class="header-more-link">
+            Over ons
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg>
+        </a>
+    </div>
+    <div id="about" class="section">
+        <div class="section-image" style="background-image: url(/picture.jpg);">
+        </div>
+        <div class="section-content">
+            <h1>Over ons</h1>
+            <p>Wij zijn de Rowans van de scouting vereniging <a href="https://www.diekantankys.nl/" target="_blank">Die Kantanky's</a>. Elk jaar gaan wij gezamenlijk op een super tof zomerkamp en kijken er natuurlijk erg naar uit.</p>
+            <p>Scouting is een stichting waar jongens en meiden voor leuke en spannende activiteiten samenkomen en worden uitgedaagd zichzelf persoonlijk te ontwikkelen. Binnen Scouting bestaan verschillende speltakken waarin mensen samen hun spellen spelen. </p>
+            <p>Scouting biedt haar (jeugd-)leden, ongeacht culturele achtergrond, afkomst, geloof, beperking of politieke overtuiging, een veilige en leerzame speelomgeving.</p>
+            <p>Wij vormen met elkaar de Rowans, de groep met leden van 15-18 jaar. In deze leeftijdsgroep/speltak word je voorbereid op het leiden van een speltak, dit houdt in dat er elke opkomst een ander stel Rowans de opkomst verzorgt. Zo leer je het vak onder de knie te krijgen. </p>
+            <p>Ook dit jaar gaan we op zomerkamp! Dit jaar gaan we met de trein naar de Duitse stad <a href="https://goo.gl/maps/h99N7Exvzvq" target="_blank">Koblenz</a>. We gaan meestal met de auto, onze ouders rijden ons dan naar het kampterrein. Dit jaar is de locatie 3,5 uur rijden, wat betekent dat onze ouders erg lang in de auto zouden zitten (minstens 7 uur heen- en terug. We kiezen daarom voor de trein: een duurzamer en milieuvriendelijker alternatief.</p> 
+            <p>Helaas hangt er aan het vervoer met de trein ook een prijskaartje. We zijn bezig met verschillende inzamelacties waaronder een <a href="https://www.gofundme.com/die-kantanky039s-zomerkamp-2019" target="_blank">Gofundme-pagina</a>. Alle kleine beetjes helpen ons, zodat wij met z’n allen een geweldig zomerkamp kunnen beleven. </p>
+            <p>Wanneer u niet in de gelegenheid bent om iets te doneren, zou u dan dit deze site willen delen met familie en vrienden. Dit kost immers geen geld 😃 sharing = caring!</p>
         </div>
     </div>
     <div class="footer">
-        <div class="container">
-            <p>Gemaakt door de rowans van die Kantanky's</p>
-        </div>
+        <p>Deze site is gemaakt door de rowans van scouting vereniging <a href="https://www.diekantankys.nl/" target="_blank">Die Kantanky's</a></p>
     </div>
+    <script src="/script.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110826300-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-110826300-6');
+    </script>
 </body>
 </html>
