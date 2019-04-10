@@ -104,32 +104,33 @@ svg {
     margin: 0 auto;
 }
 
-.animation-1 {
+.animation-1, .animation-2, .animation-3, .animation-4, .animation-5 {
+    display: inline-block;
     opacity: 0;
+}
+.animation-1 {
     animation: show 0.5s 0.5s forwards;
 }
 .animation-2 {
-    opacity: 0;
     animation: show 0.5s 1s forwards;
 }
 .animation-3 {
-    opacity: 0;
     animation: show 0.5s 1.5s forwards;
 }
 .animation-4 {
-    opacity: 0;
     animation: show 0.5s 2s forwards;
 }
 .animation-5 {
-    opacity: 0;
     animation: show 0.5s 2.5s forwards;
 }
 
 @keyframes show {
     from {
+        transform: translateY(8px);
         opacity: 0;
     }
     to {
+        transform: translateY(0px);
         opacity: 1;
     }
 }
