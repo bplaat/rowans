@@ -1,6 +1,7 @@
 (function(){
     var nav = document.getElementById('nav');
-    window.onscroll = function(){
+    window.onscroll = function () {
+        nav.classList.remove('animation-5');
         nav.style.backgroundColor = 'rgba(17, 17, 17, ' + Math.min(window.pageYOffset / window.innerHeight, 0.95) + ')';
     };
 
