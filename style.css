@@ -23,11 +23,22 @@ a:hover, a:focus {
     text-decoration: underline;
 }
 
-svg {
-    display: block;
+.logo-svg, .more-svg {
     width: 48px;
     height: 48px;
     fill: #fff;
+}
+
+.logo-svg {
+    float: left;
+    margin: 4px;
+}
+.logo-label {
+    display: none;
+}
+
+.more-svg {
+    display: block;
 }
 
 .container {
@@ -158,6 +169,13 @@ svg {
 }
 
 @media (min-width: 1024px) {
+    .logo-svg {
+        margin-right: 20px
+    }
+    .logo-label {
+        display: inline;
+    }
+
     .header-title {
         font-size: 5vw;
     }
